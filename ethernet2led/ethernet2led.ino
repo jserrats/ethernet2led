@@ -2,9 +2,9 @@
 #include <Adafruit_NeoPixel.h>
 
 #define PIN 6
-#define NUM_LEDS 60
+#define NUM_LEDS 74
 #define BRIGHTNESS 20
-#define BUFFER_LEN 256
+#define BUFFER_LEN NUM_LEDS*4
 
 EthernetUDP udp;
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRB);
